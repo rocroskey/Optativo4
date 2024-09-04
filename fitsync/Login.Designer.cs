@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.labelBienvenido = new System.Windows.Forms.Label();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.labelUser = new System.Windows.Forms.Label();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.botonIngresar = new System.Windows.Forms.Button();
+            this.botonCancelar = new System.Windows.Forms.Button();
+            this.botonRegistrar = new System.Windows.Forms.Button();
+            this.labelInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -52,110 +52,112 @@
             this.label1.Size = new System.Drawing.Size(392, 487);
             this.label1.TabIndex = 0;
             // 
-            // label2
+            // labelBienvenido
             // 
-            this.label2.BackColor = System.Drawing.Color.MediumPurple;
-            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label2.Location = new System.Drawing.Point(12, 64);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(365, 60);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Bienvenido";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelBienvenido.BackColor = System.Drawing.Color.MediumPurple;
+            this.labelBienvenido.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.labelBienvenido.Font = new System.Drawing.Font("Berlin Sans FB", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBienvenido.ForeColor = System.Drawing.Color.GhostWhite;
+            this.labelBienvenido.Location = new System.Drawing.Point(12, 64);
+            this.labelBienvenido.Name = "labelBienvenido";
+            this.labelBienvenido.Size = new System.Drawing.Size(365, 60);
+            this.labelBienvenido.TabIndex = 1;
+            this.labelBienvenido.Text = "Bienvenido";
+            this.labelBienvenido.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox1
+            // txtUser
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(417, 134);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(375, 43);
-            this.textBox1.TabIndex = 2;
+            this.txtUser.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(417, 134);
+            this.txtUser.Multiline = true;
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(375, 43);
+            this.txtUser.TabIndex = 2;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(417, 240);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(375, 43);
-            this.textBox2.TabIndex = 3;
+            this.txtPassword.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(417, 240);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(375, 43);
+            this.txtPassword.TabIndex = 3;
             // 
-            // label3
+            // labelUser
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelUser.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(413, 99);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(267, 32);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Usuario";
+            this.labelUser.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.Location = new System.Drawing.Point(413, 99);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(267, 32);
+            this.labelUser.TabIndex = 4;
+            this.labelUser.Text = "Usuario";
             // 
-            // label4
+            // labelPassword
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(413, 205);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(267, 32);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Contraseña";
+            this.labelPassword.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Location = new System.Drawing.Point(413, 205);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(267, 32);
+            this.labelPassword.TabIndex = 5;
+            this.labelPassword.Text = "Contraseña";
             // 
-            // button1
+            // botonIngresar
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Berlin Sans FB", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(417, 305);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 37);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Ingresar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.botonIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonIngresar.Font = new System.Drawing.Font("Berlin Sans FB", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonIngresar.Location = new System.Drawing.Point(417, 305);
+            this.botonIngresar.Name = "botonIngresar";
+            this.botonIngresar.Size = new System.Drawing.Size(142, 37);
+            this.botonIngresar.TabIndex = 6;
+            this.botonIngresar.Text = "Ingresar";
+            this.botonIngresar.UseVisualStyleBackColor = true;
+            this.botonIngresar.Click += new System.EventHandler(this.botonIngresar_Click);
             // 
-            // button2
+            // botonCancelar
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Berlin Sans FB", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(654, 305);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 37);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.botonCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonCancelar.Font = new System.Drawing.Font("Berlin Sans FB", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonCancelar.Location = new System.Drawing.Point(654, 305);
+            this.botonCancelar.Name = "botonCancelar";
+            this.botonCancelar.Size = new System.Drawing.Size(142, 37);
+            this.botonCancelar.TabIndex = 7;
+            this.botonCancelar.Text = "Cancelar";
+            this.botonCancelar.UseVisualStyleBackColor = true;
+            this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
             // 
-            // button3
+            // botonRegistrar
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.botonRegistrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(530, 402);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(150, 37);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Registrarse";
-            this.button3.UseVisualStyleBackColor = true;
+            this.botonRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonRegistrar.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonRegistrar.Location = new System.Drawing.Point(530, 402);
+            this.botonRegistrar.Name = "botonRegistrar";
+            this.botonRegistrar.Size = new System.Drawing.Size(150, 37);
+            this.botonRegistrar.TabIndex = 8;
+            this.botonRegistrar.Text = "Registrarse";
+            this.botonRegistrar.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // labelInfo
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.labelInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.Font = new System.Drawing.Font("Berlin Sans FB", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.label5.Location = new System.Drawing.Point(417, 367);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(375, 32);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "* En caso de no tener una cuenta\r\n";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelInfo.Font = new System.Drawing.Font("Berlin Sans FB", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInfo.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.labelInfo.Location = new System.Drawing.Point(417, 367);
+            this.labelInfo.Name = "labelInfo";
+            this.labelInfo.Size = new System.Drawing.Size(375, 32);
+            this.labelInfo.TabIndex = 9;
+            this.labelInfo.Text = "* En caso de no tener una cuenta\r\n";
+            this.labelInfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Login
             // 
@@ -163,15 +165,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(827, 487);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelInfo);
+            this.Controls.Add(this.botonRegistrar);
+            this.Controls.Add(this.botonCancelar);
+            this.Controls.Add(this.botonIngresar);
+            this.Controls.Add(this.labelPassword);
+            this.Controls.Add(this.labelUser);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.labelBienvenido);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -189,14 +191,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelBienvenido;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label labelUser;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.Button botonCancelar;
+        private System.Windows.Forms.Button botonRegistrar;
+        private System.Windows.Forms.Label labelInfo;
+        private System.Windows.Forms.Button botonIngresar;
     }
 }

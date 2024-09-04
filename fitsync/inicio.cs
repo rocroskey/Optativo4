@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace fitsync
 {
-    public partial class FitSync : Form
+    public partial class Inicio : Form
     {
-        public FitSync()
+        public Inicio()
         {
             InitializeComponent();
         }
