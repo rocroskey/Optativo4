@@ -37,8 +37,6 @@ namespace fitsync
             {
                 Console.WriteLine("Ocurrió un error: " + ex.Message);
             }
-
-            Console.ReadKey(); // Mantener la consola abierta hasta que presiones una tecla
         }
     }
 }
