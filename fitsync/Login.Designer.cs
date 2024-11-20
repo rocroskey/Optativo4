@@ -37,8 +37,6 @@
             this.labelPassword = new System.Windows.Forms.Label();
             this.botonIngresar = new System.Windows.Forms.Button();
             this.botonCancelar = new System.Windows.Forms.Button();
-            this.botonRegistrar = new System.Windows.Forms.Button();
-            this.labelInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -133,40 +131,12 @@
             this.botonCancelar.UseVisualStyleBackColor = true;
             this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
             // 
-            // botonRegistrar
-            // 
-            this.botonRegistrar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.botonRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.botonRegistrar.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonRegistrar.Location = new System.Drawing.Point(530, 402);
-            this.botonRegistrar.Name = "botonRegistrar";
-            this.botonRegistrar.Size = new System.Drawing.Size(150, 37);
-            this.botonRegistrar.TabIndex = 8;
-            this.botonRegistrar.Text = "Registrarse";
-            this.botonRegistrar.UseVisualStyleBackColor = true;
-            // 
-            // labelInfo
-            // 
-            this.labelInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelInfo.Font = new System.Drawing.Font("Berlin Sans FB", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelInfo.ForeColor = System.Drawing.Color.DarkOrchid;
-            this.labelInfo.Location = new System.Drawing.Point(417, 367);
-            this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(375, 32);
-            this.labelInfo.TabIndex = 9;
-            this.labelInfo.Text = "* En caso de no tener una cuenta\r\n";
-            this.labelInfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(827, 487);
-            this.Controls.Add(this.labelInfo);
-            this.Controls.Add(this.botonRegistrar);
             this.Controls.Add(this.botonCancelar);
             this.Controls.Add(this.botonIngresar);
             this.Controls.Add(this.labelPassword);
@@ -197,8 +167,6 @@
         private System.Windows.Forms.Label labelUser;
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.Button botonCancelar;
-        private System.Windows.Forms.Button botonRegistrar;
-        private System.Windows.Forms.Label labelInfo;
         private System.Windows.Forms.Button botonIngresar;
     }
 }

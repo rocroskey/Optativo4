@@ -17,18 +17,17 @@ namespace fitsync
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            PanelCliente.Visible = true;
+            PanelSuscripcion.Visible = false;
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void suscripcionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            PanelSuscripcion.Visible = true;
+            PanelCliente.Visible = false;
 
         }
     }
