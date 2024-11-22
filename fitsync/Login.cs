@@ -16,6 +16,7 @@ namespace fitsync
         public Login()
         {
             InitializeComponent();
+            txtPassword.PasswordChar = '*';
         }
 
         private void botonCancelar_Click(object sender, EventArgs e)
@@ -26,19 +27,32 @@ namespace fitsync
         private void botonIngresar_Click(object sender, EventArgs e)
         {
             
-            Inicio form = new Inicio();
-            form.Show();
-            this.Hide();
+            string usuarioPredeterminado = "5410258";
+            string contraseñaPredeterminada = "Gustavo05";
 
-            form.FormClosing += frm_closing;
+            
+            if (txtUser.Text == usuarioPredeterminado && txtPassword.Text == contraseñaPredeterminada)
+            {
+                
+                Inicio form = new Inicio();
+                form.Show();
+                this.Hide();
+
+                
+                form.FormClosing += frm_closing;
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contraseña incorrectos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void frm_closing(object sender, FormClosingEventArgs e)
         {
+
             txtUser.Text = "";
             txtPassword.Text = "";
             this.Show();
-
         }
     }
 }
